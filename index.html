@@ -12,7 +12,7 @@
 
 		div {
 			width: 600px;
-			margin: 20px auto;
+			margin: 20px auto 60px;
 			font-family: sans-serif;
 			text-align: center;
 			line-height: 1.4;
@@ -24,6 +24,12 @@
 
 		ul {margin:0; padding: 0;}
 		li {list-style: none;margin-bottom: 10px;}
+
+		pre {
+			background-color: #f8f8f8;
+			border: 1px solid #ddd;
+			padding: 6px 10px;
+		}
 
 		.content { text-align: left;}
 		.content h1,
@@ -47,16 +53,9 @@
 </head>
 <body>
 <div id="container"></div>
-<div>
-<p>
-	<iframe src="http://ghbtns.com/github-btn.html?user=velocityzen&repo=strokes&type=watch&count=true&size=large" height="30" width="170" frameborder="0" scrolling="0" style="width:170px; height: 30px;" allowTransparency="true"></iframe>
-	<iframe src="http://ghbtns.com/github-btn.html?user=velocityzen&type=follow&count=true&size=large" height="30" width="240" frameborder="0" scrolling="0" style="width:240px; height: 30px;" allowTransparency="true"></iframe>
-</p>
-</div>
 <div class="content">
 	<h1 id="strokes">Strokes</h1>
 <p>Simple SVG animation component for handdraw like effect.<br>No dependecies. And has a jquery plugin version.</p>
-<p><strong><a href="http://velocityzen.github.io/strokes">Demo</a></strong></p>
 <h2 id="usage">Usage</h2>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> container = document.getElementById(<span class="hljs-string">'container'</span>);
 <span class="hljs-keyword">var</span> vectors = [];

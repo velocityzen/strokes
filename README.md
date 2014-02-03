@@ -2,8 +2,6 @@
 Simple SVG animation component for handdraw like effect.
 No dependecies. And has a jquery plugin version.
 
-**[Demo](http://velocityzen.github.io/strokes)**
-
 ## Usage
 ```js
 var container = document.getElementById('container');
