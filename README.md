@@ -1,12 +1,10 @@
 #Strokes
-
 Simple SVG animation component for handdraw like effect.
 No dependecies. And has a jquery plugin version.
 
-**[Check this](http://demo)**
+**[Demo](http://velocityzen.github.io/strokes)**
 
 ## Usage
-
 ```js
 var container = document.getElementById('container');
 var vectors = [];
@@ -24,5 +22,6 @@ strokes.draw(1);
 * **changeTime** — time between strokes changes in ms. if undefined it will not change automaticaly. Default is undefined;
 * **changeDelay** — delay between end of one stroke drawing and beginig of next stroke start to draw, in ms. Default is 0;
 * **start** — on what vector start to draw. Default is 0.
+* **transition** — css transition string for vectors animation.
 
 If we'll use **changeTime** options it will start draw vectors automaticaly.
