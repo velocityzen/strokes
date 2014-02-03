@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>{{ title }}</title>
+
+	<style>
+		body {font-family: Helvetica, Verdana, Tahoma, sans-serif;}
+		#container {
+			height: 300px;
+		}
+
+		div {
+			width: 600px;
+			margin: 20px auto;
+			font-family: sans-serif;
+			text-align: center;
+			line-height: 1.4;
+		}
+
+		p {
+			margin: 20px 0;
+		}
+
+		ul {margin:0; padding: 0;}
+		li {list-style: none;margin-bottom: 10px;}
+
+		.content { text-align: left;}
+		.content h1,
+		.content h2,
+		.content h3 {
+			text-align: center;
+		}
+
+		svg {
+			width: 100%;
+			height: 100%;
+		}
+
+		path {
+	        fill:none;
+	        stroke: #ff0000;
+	        stroke-width:10;
+	        stroke-miterlimit:20;
+    	}
+	</style>
+</head>
+<body>
+<div id="container"></div>
+<div>
+<p>
+	<iframe src="http://ghbtns.com/github-btn.html?user=velocityzen&repo=strokes&type=watch&count=true&size=large" height="30" width="170" frameborder="0" scrolling="0" style="width:170px; height: 30px;" allowTransparency="true"></iframe>
+	<iframe src="http://ghbtns.com/github-btn.html?user=velocityzen&type=follow&count=true&size=large" height="30" width="240" frameborder="0" scrolling="0" style="width:240px; height: 30px;" allowTransparency="true"></iframe>
+</p>
+</div>
+<div class="content">
+	{{ content }}
+	<p><em>Have fun!<br>License: MIT.</em></p>
+</div>
+<script src="strokes.js"></script>
+<script>
+var container = document.getElementById('container');
+var vectors = [
+	"M 123.579,107.58 148.877,49.083 14.085,134.578 134.079,167.411 57.712,260.407"+
+	"M 223.141,49.933 130.361,260.69 166.333,101.698 235.602,101.698 "+
+	"M 159.24,261 208.514,149.194 228.712,198.25 268.649,150.127 "+
+	"M 304.148,150.127 264.765,197.878 263.644,262.46 314.454,225.979 304.148,150.127 "+
+	"M 409.678,49.667 317.22,261 408.792,149.796 355.825,226.092 378.891,261.185 "+
+	"M 414.585,226.541 479.701,198.053 448.287,150.127 399.384,261.185 463.066,235.651 "+
+	"M 545.312,181.872 540.369,150 500.448,199 551.409,226.25 501.689,261"
+];
+
+//initialisation
+var strokes = new Strokes(container, vectors, {drawTime: 4000, changeTime: 7000, changeDelay:1000});
+strokes.draw(0);
+</script>
+</body>
+</html>
