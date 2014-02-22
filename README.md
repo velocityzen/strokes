@@ -22,4 +22,4 @@ strokes.draw(1);
 * **start** — on what vector start to draw. Default is 0.
 * **transition** — css transition string for vectors animation.
 
-If we'll use **changeTime** options it will start draw vectors automaticaly.
+If we are using **changeTime** options it will start to draw vectors automaticaly.
