@@ -1,6 +1,6 @@
 #Strokes
 Simple SVG animation component for handdraw like effect.
-No dependecies. And has a jquery plugin version.
+No dependecies.
 
 ## Usage
 ```js
